@@ -1,0 +1,6 @@
+.env
+*.key
+__pycache__/
+.ipynb_checkpoints/
+conversation_memory.json
+warehouse_observations.json
