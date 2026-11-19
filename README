@@ -1,0 +1,148 @@
+# AI-Powered Warehouse Operations Analyst
+### Agentic AI | Predictive Replenishment | Stockout Detection | Demand Forecasting | WMS Functional Intelligence
+
+An AI-powered warehouse operations analyst built using Python, Gemini API, Machine Learning and Retrieval-Augmented Generation (RAG) to demonstrate 
+how AI can support predictive and data-driven warehouse operations.
+
+## Project Overview
+
+This portfolio project demonstrates how Generative AI, Machine Learning and Python can assist warehouse functional teams in identifying inventory risks, analyzing replenishment requirements, detecting recurring stockout patterns and forecasting demand.
+
+The project combines WMS business rules with AI-driven analysis to generate operational recommendations and decision-support insights.
+
+It is designed to demonstrate the intersection of **Warehouse Management System (WMS) functional knowledge and Agentic AI capabilities**.
+
+## Business Problems Addressed
+
+Warehouse operations teams can face challenges such as:
+
+- Forward-pick locations falling below minimum stock levels.
+- Insufficient reserve inventory to fulfil replenishment requirements.
+- Potential stockouts due to high demand and low inventory coverage.
+- Recurring inventory risks across warehouse observations.
+- Limited visibility into future demand patterns.
+- Difficulty identifying applicable business rules and operational procedures.
+
+This project explores how AI can help address these challenges.
+
+## Key Features
+
+### 1. SKU Inventory Analysis
+- Retrieves SKU-level inventory information.
+- Analyses forward-pick, reserve, minimum and target quantities.
+- Identifies inventory conditions requiring attention.
+
+### 2. Predictive Replenishment Recommendations
+- Evaluates forward-pick inventory against minimum and target quantities.
+- Considers open customer demand and existing replenishment tasks.
+- Applies reserve inventory eligibility checks.
+- Identifies potential reserve shortages.
+- Generates replenishment recommendations and exceptions.
+
+### 3. Stockout Risk Detection
+- Evaluates projected inventory coverage against demand.
+- Identifies high-risk SKUs.
+- Highlights potential stockout situations requiring investigation.
+
+### 4. Machine Learning-Based Demand Forecasting
+- Uses a Random Forest Regressor to forecast demand.
+- Compares model predictions against a 7-day rolling-average baseline.
+- Evaluates forecasting performance using Mean Absolute Error (MAE).
+
+**Illustrative project test result:**
+- Random Forest MAE: 1.70
+- 7-day rolling-average baseline MAE: 3.11
+
+These results are based on the project's sample dataset and are not production performance benchmarks.
+
+### 5. Agentic AI and Tool Orchestration
+- Uses Gemini API to power the AI agent.
+- Implements selective tool calling based on user requests.
+- Coordinates inventory analysis, stockout detection, replenishment recommendations and FDS retrieval.
+- Combines outputs from multiple Python tools to support operational investigations.
+
+### 6. FDS Document Retrieval and Business-Rule Validation
+- Implements Retrieval-Augmented Generation (RAG).
+- Retrieves relevant Functional Design Specification (FDS) content.
+- Uses warehouse business rules to support recommendations.
+- Considers replenishment thresholds, existing tasks, eligible inventory and location capacity.
+
+### 7. Conversational Memory
+- Maintains conversation history using JSON-based storage.
+- Retrieves relevant previous discussions to provide context for follow-up investigations.
+
+### 8. Historical Warehouse Observation and Risk Pattern Detection
+- Analyses historical warehouse observations across SKUs.
+- Identifies recurring high-risk inventory patterns.
+- Highlights SKUs with repeated minimum-stock breaches.
+- Distinguishes recurring risks from intermittent risk conditions.
+
+## Technology Stack
+
+| Category | Technologies |
+|---|---|
+| Programming | Python |
+| Development Environment | Google Colab |
+| Generative AI | Google Gemini API |
+| Data Analysis | Pandas |
+| Machine Learning | Scikit-learn |
+| Forecasting | Random Forest Regressor |
+| Retrieval | Retrieval-Augmented Generation (RAG) |
+| Memory | JSON-based conversational memory |
+| AI Architecture | Agentic AI and selective tool orchestration |
+
+## High-Level Architecture
+
+1. User submits a warehouse investigation request.
+2. Gemini-powered AI agent interprets the request.
+3. The agent selectively invokes relevant Python tools.
+4. Python tools analyse inventory, demand and replenishment data.
+5. RAG retrieves relevant FDS rules when required.
+6. Historical observations and conversational memory provide additional context.
+7. The agent consolidates the results into operational insights and recommendations.
+
+## WMS Functional Knowledge Demonstrated
+
+The project applies warehouse operational concepts such as:
+
+- Forward-pick minimum and target stock levels.
+- Reserve-to-forward-pick replenishment.
+- Existing open replenishment task consideration.
+- Inventory eligibility and stock restrictions.
+- Demand and inventory coverage analysis.
+- Stockout risk identification.
+- Functional Design Specification (FDS) interpretation.
+- Exception identification and operational recommendations.
+
+## Business Value
+
+The project demonstrates how AI can support warehouse teams by:
+
+- Improving visibility into inventory risks.
+- Supporting proactive replenishment decisions.
+- Identifying potential stockout conditions.
+- Highlighting recurring warehouse inventory problems.
+- Supporting demand-based operational planning.
+- Making functional business rules easier to retrieve and apply.
+
+## My Role and Contribution
+
+- Identified warehouse operational problems and translated them into AI-assisted use cases.
+- Defined business scenarios, replenishment rules and decision criteria.
+- Used Generative AI assistance to develop Python-based analytical tools.
+- Designed the functional logic for inventory analysis, replenishment and exception identification.
+- Integrated Gemini-powered agent orchestration with Python tools.
+- Implemented FDS-based retrieval and conversational memory.
+- Tested the agent using illustrative warehouse scenarios and sample data.
+
+## Important Disclaimer
+
+This is an illustrative portfolio project developed using sample warehouse data.
+
+The AI agent provides analytical insights and decision-support recommendations only. It does not connect to a live WMS environment, create actual replenishment tasks or execute warehouse transactions.
+
+Forecasting results are based on the project's sample dataset and should not be interpreted as production-level accuracy.
+
+---
+
+**Project Focus:** Applying AI and Machine Learning to Warehouse Operations through WMS Functional Knowledge.
